@@ -54,6 +54,43 @@ JUNK_PATTERNS = [
     r'^About',
 ]
 
+# Keywords that indicate vet/health relevance (at least one must match)
+VET_HEALTH_KEYWORDS = [
+    r'\bveterin', r'\banimal', r'\bpet\b', r'\bdog\b', r'\bcat\b', r'\bhorse', r'\bequine',
+    r'\bbovine', r'\bcattle', r'\blivestock', r'\bpig\b', r'\bswine', r'\bpoultry', r'\bbird',
+    r'\bwildlife', r'\bzoo\b', r'\bexotic', r'\bcanine', r'\bfeline', r'\bspecies',
+    r'\bclinic', r'\bhospital', r'\bsurgery', r'\bdiagnos', r'\btreatment', r'\btherap',
+    r'\bdisease', r'\bvirus', r'\bbacteri', r'\binfect', r'\bvaccine', r'\bimmun',
+    r'\bpatholog', r'\boncolog', r'\bcancer', r'\btumor',
+    r'\bresearch(?!.*magazine)', r'\bstudy\b', r'\bscientist', r'\blab\b',
+    r'\bone health', r'\bzoonotic', r'\bpublic health', r'\bepidemiolog',
+    r'\bnutrition', r'\bdiet\b', r'\bpharma', r'\bdrug\b', r'\bclinical',
+    r'\banatomy', r'\bphysiology', r'\bgenetics', r'\bmolecular', r'\bcell\b',
+    r'\bdvm\b', r'\bvet\b', r'\bveterinary', r'\bresidency\b', r'\bintern\b',
+    r'\bshelter', r'\brescue\b', r'\bwelfare', r'\bhumane',
+    r'\bbreeding', r'\breproduction', r'\bfertility', r'\btheriogenology',
+    r'\bcardio', r'\bneuro', r'\bortho', r'\bderma', r'\bophthalm', r'\bdental',
+    r'\bemergency', r'\bcritical care', r'\banesthes', r'\bradiology', r'\bimaging',
+    r'\bnecropsy', r'\bautopsy', r'\bbiopsy', r'\bhistology',
+    r'\bfellowship', r'\bscholarship',
+    r'\baccredit', r'\bavma\b', r'\baaha\b',
+]
+
+# Keywords that indicate OFF-TOPIC content (exclude if these match without vet context)
+EXCLUDE_KEYWORDS = [
+    r'football', r'basketball', r'baseball', r'softball', r'soccer', r'hockey',
+    r'lacrosse', r'volleyball', r'tennis', r'golf', r'track and field',
+    r'athlete', r'championship', r'tournament', r'playoff', r'coach\b',
+    r'shark[s]?\b(?!.*aquarium)', r'panther[s]?\b', r'tiger[s]?\b(?!.*zoo)', r'bear[s]?\b(?!.*wildlife)',
+    r'ncaa', r'nec\b', r'conference\b(?!.*veterinary)',
+    r'spirit squad', r'cheerleading', r'dance team',
+    r'entrepreneur', r'business school', r'mba\b',
+    r'law school', r'engineering(?!.*biomedical)', r'computer science',
+    r'music\b', r'art\b(?!.*animals)', r'theater', r'film\b',
+    r'political', r'election', r'president(?!.*university)',
+    r'real estate', r'construction', r'architecture(?!.*hospital)',
+]
+
 # Schools we're tracking (for URL fixing)
 SCHOOL_URLS = {
     'Western University': 'https://www.westernu.edu',
@@ -67,6 +104,32 @@ def get_emoji(title, summary=''):
         if re.search(pattern, text, re.IGNORECASE):
             return emoji
     return '📰'  # Default
+
+def is_vet_health_related(title, source=''):
+    """Check if article is related to veterinary medicine or health sciences.
+    
+    STRICT: Title must contain relevant keywords. Source name alone is not enough.
+    This ensures we only surface truly relevant content.
+    """
+    title_lower = title.lower()
+    
+    # Check for vet/health keywords in TITLE specifically
+    for pattern in VET_HEALTH_KEYWORDS:
+        if re.search(pattern, title_lower, re.IGNORECASE):
+            return True
+    
+    return False
+
+def is_off_topic(title):
+    """Check if article is clearly off-topic (sports, unrelated fields)."""
+    text = title.lower()
+    
+    for pattern in EXCLUDE_KEYWORDS:
+        if re.search(pattern, text, re.IGNORECASE):
+            # Double-check it's not actually vet-related
+            if not is_vet_health_related(title):
+                return True
+    return False
 
 def is_junk(title, url):
     """Check if article should be filtered out."""
@@ -144,6 +207,8 @@ def main():
     # Filter and process
     processed = []
     seen_titles = set()
+    skipped_off_topic = 0
+    skipped_not_relevant = 0
     
     for article in articles:
         title = article.get('title', '')
@@ -152,6 +217,16 @@ def main():
         
         # Skip junk
         if is_junk(title, url):
+            continue
+        
+        # Skip off-topic content (sports, unrelated fields)
+        if is_off_topic(title):
+            skipped_off_topic += 1
+            continue
+        
+        # Must be vet/health related
+        if not is_vet_health_related(title, source):
+            skipped_not_relevant += 1
             continue
         
         # Skip duplicates
@@ -172,6 +247,8 @@ def main():
             'source': source,
             'date': article.get('date', '')
         })
+    
+    print(f"Filtered: {skipped_off_topic} off-topic, {skipped_not_relevant} not relevant")
     
     # Take most recent 100
     processed = processed[:100]
