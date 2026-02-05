@@ -40,7 +40,7 @@
           const items = data.items.slice(0, maxItems);
           container.innerHTML = VetMedNewsFeed.render(items, data.lastUpdated);
         } else {
-          container.innerHTML = '<div class="vetmed-newsfeed"><div class="vetmed-newsfeed-header">Vet Med News</div><div style="padding: 20px; text-align: center; color: #6b7280;">Unable to load news feed</div></div>';
+          container.innerHTML = '<div class="vetmed-newsfeed"><div class="vetmed-newsfeed-header">Vet On It CE: Vet Med News and Research Feed</div><div style="padding: 20px; text-align: center; color: #6b7280;">Unable to load news feed</div></div>';
         }
       });
     },
@@ -59,7 +59,7 @@
 
     render: function(items, lastUpdated) {
       let html = '<div class="vetmed-newsfeed">';
-      html += '<div class="vetmed-newsfeed-header">Vet Med News</div>';
+      html += '<div class="vetmed-newsfeed-header">Vet On It CE: Vet Med News and Research Feed</div>';
       html += '<div class="vetmed-newsfeed-items">';
 
       items.forEach(function(item) {
