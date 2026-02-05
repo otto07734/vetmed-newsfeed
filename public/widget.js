@@ -71,7 +71,7 @@
       
       const updateDate = lastUpdated ? new Date(lastUpdated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
       html += '<div class="vetmed-newsfeed-footer">';
-      html += '<div class="vetmed-scroll-hint">↓ Scroll for more • ' + items.length + ' articles</div>';
+      html += '<div class="vetmed-scroll-hint">↓ Scroll for more</div>';
       html += '34 vet schools monitored · Updated ' + updateDate + '<br><a href="https://vetonitce.org" target="_blank">Powered by VetOnIt CE</a>';
       html += '</div>';
       html += '</div>';
@@ -109,9 +109,9 @@
         // Update scroll hint
         if (scrollHint) {
           if (scrollTop > 50) {
-            scrollHint.textContent = '↑↓ Scroll • ' + itemCount + ' articles (loops at end)';
+            scrollHint.textContent = '↑↓ Scroll';
           } else {
-            scrollHint.textContent = '↓ Scroll for more • ' + itemCount + ' articles';
+            scrollHint.textContent = '↓ Scroll for more';
           }
         }
 
@@ -129,7 +129,7 @@
           });
 
           if (scrollHint) {
-            scrollHint.textContent = '↻ Looped • ' + itemCount + ' articles';
+            scrollHint.textContent = '↓ Scroll for more';
           }
         }
       });
