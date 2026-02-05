@@ -99,6 +99,13 @@
   border-top: 1px solid #e5e7eb;
 }
 
+.vetmed-scroll-hint {
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
 .vetmed-newsfeed-footer a {
   color: #6b7280;
   text-decoration: none;
