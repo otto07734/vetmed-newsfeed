@@ -1,0 +1,53 @@
+{
+  "lastUpdated": "2026-02-05T13:30:00-07:00",
+  "items": [
+    {
+      "emoji": "💰",
+      "title": "UC Davis Receives $120M Gift",
+      "summary": "The largest donation ever to veterinary medicine! This transformative gift will fund new research facilities, endowed professorships, and student scholarships.",
+      "url": "https://www.ucdavis.edu/news/uc-davis-receives-120m-gift-largest-ever-veterinary-medicine",
+      "source": "UC Davis",
+      "date": "2026-02-05"
+    },
+    {
+      "emoji": "🎓",
+      "title": "Cornell Public Health Fellowship",
+      "summary": "Cornell announces a new full-tuition fellowship for students pursuing public health degrees, expanding access to One Health training.",
+      "url": "https://www.vet.cornell.edu/about-us/news/20260205/cornell-public-health-announces-new-full-tuition-fellowship",
+      "source": "Cornell",
+      "date": "2026-02-05"
+    },
+    {
+      "emoji": "🔬",
+      "title": "Texas A&M Zoonotic Research",
+      "summary": "Epidemiologist studies diseases that jump between animals and humans — critical work for pandemic preparedness.",
+      "url": "https://vetmed.tamu.edu/news/press-releases/leading-the-flock-zoonotic-disease-research/",
+      "source": "Texas A&M",
+      "date": "2026-02-04"
+    },
+    {
+      "emoji": "🏥",
+      "title": "Texas A&M McAllen Facility",
+      "summary": "New Rio Grande Valley campus brings veterinary education to an underserved region, training the next generation of food animal vets.",
+      "url": "https://vetmed.tamu.edu/news/press-releases/mcallen-facility-expands-health-care-veterinary-medicine/",
+      "source": "Texas A&M",
+      "date": "2026-02-03"
+    },
+    {
+      "emoji": "🐕",
+      "title": "Penn Vet Working Dog Center",
+      "summary": "CBS Philadelphia features Penn's groundbreaking canine cancer detection research with working dogs.",
+      "url": "https://www.cbsnews.com/philadelphia/news/penn-vet-working-dog-center-dog-cancer/",
+      "source": "Penn Vet",
+      "date": "2026-01-30"
+    },
+    {
+      "emoji": "🐄",
+      "title": "Tufts Bovine Breeding Lab",
+      "summary": "Theriogenology Club and Student Livestock Organization host hands-on bovine breeding training for vet students.",
+      "url": "https://vet.tufts.edu/news-events/news/tufts-theriogenology-club-and-student-livestock-organization-bovine-breeding-lab",
+      "source": "Tufts",
+      "date": "2026-02-05"
+    }
+  ]
+}
