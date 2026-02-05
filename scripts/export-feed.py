@@ -1,0 +1,193 @@
+#!/usr/bin/env python3
+"""
+Export blogwatcher articles to news.json for the VetMed News Feed widget.
+Filters junk articles, assigns emojis, and formats for the widget.
+"""
+
+import subprocess
+import json
+import re
+from datetime import datetime
+from pathlib import Path
+
+# Emoji mapping based on keywords
+EMOJI_MAP = [
+    (r'gift|donat|fund|million|\$\d+|endow|philanthrop', '💰'),
+    (r'fellowship|scholar|student|graduat|degree|class', '🎓'),
+    (r'research|study|discover|scientist|lab\b|investig', '🔬'),
+    (r'hospital|clinic|facility|center|treatment|surgery', '🏥'),
+    (r'dog|canine|puppy|k-?9', '🐕'),
+    (r'cat|feline|kitten', '🐱'),
+    (r'horse|equine|equestrian', '🐴'),
+    (r'cow|bovine|cattle|livestock|dairy', '🐄'),
+    (r'pig|swine|porcine', '🐷'),
+    (r'bird|avian|poultry|chicken', '🐦'),
+    (r'zoo|wildlife|exotic|conservation', '🦁'),
+    (r'cancer|tumor|oncolog', '🎗️'),
+    (r'vaccine|immun|virus|disease|outbreak|pandemic', '💉'),
+    (r'award|honor|recogni|winner|achievement', '🏆'),
+    (r'conference|symposium|forum|event|workshop', '📅'),
+    (r'one health|zoonotic|public health', '🌍'),
+    (r'nutrition|diet|food|feed', '🥗'),
+    (r'emergency|rescue|disaster', '🚨'),
+    (r'technology|ai|artificial|digital|robot', '🤖'),
+    (r'partnership|collaborat|agreement', '🤝'),
+]
+
+# Patterns to filter out junk articles
+JUNK_PATTERNS = [
+    r'^Read(\s+All)?(\s+News)?$',
+    r'^EMAIL\s',
+    r'^mailto:',
+    r'^\d+$',  # Just numbers
+    r'^Page \d+',
+    r'^Next$|^Previous$',
+    r'^Read more$',
+    r'^See all$',
+    r'^School of Veterinary Medicine$',
+    r'^Veterinary Medicine$',
+    r'^College of Veterinary Medicine$',
+    r'^News$',
+    r'^Events$',
+    r'^Home$',
+    r'^Contact',
+    r'^About',
+]
+
+# Schools we're tracking (for URL fixing)
+SCHOOL_URLS = {
+    'Western University': 'https://www.westernu.edu',
+    'Lincoln Memorial University': '',  # Already full URLs
+}
+
+def get_emoji(title, summary=''):
+    """Assign an emoji based on content keywords."""
+    text = f"{title} {summary}".lower()
+    for pattern, emoji in EMOJI_MAP:
+        if re.search(pattern, text, re.IGNORECASE):
+            return emoji
+    return '📰'  # Default
+
+def is_junk(title, url):
+    """Check if article should be filtered out."""
+    if len(title) < 10:
+        return True
+    for pattern in JUNK_PATTERNS:
+        if re.match(pattern, title, re.IGNORECASE):
+            return True
+    if url.startswith('mailto:'):
+        return True
+    if '/page/' in url and url.endswith('/'):
+        return True
+    if '#footer' in url or '#header' in url or '#nav' in url:
+        return True
+    if url.endswith('/index.html') and len(title) < 20:
+        return True
+    return False
+
+def fix_url(url, source):
+    """Fix relative URLs."""
+    if url.startswith('http'):
+        return url
+    if url.startswith('/'):
+        base = SCHOOL_URLS.get(source, '')
+        if base:
+            return base + url
+    return url
+
+def parse_blogwatcher_output(output):
+    """Parse blogwatcher articles output."""
+    articles = []
+    current = {}
+    
+    lines = output.strip().split('\n')
+    
+    for line in lines:
+        line = line.strip()
+        
+        # New article starts with [id]
+        if re.match(r'\[\d+\]', line):
+            if current and 'title' in current:
+                articles.append(current)
+            current = {}
+            # Extract title
+            match = re.match(r'\[\d+\]\s+\[(?:read|unread)\]\s+(.+)', line)
+            if match:
+                current['title'] = match.group(1).strip()
+        elif line.startswith('Blog:'):
+            current['source'] = line.replace('Blog:', '').strip()
+        elif line.startswith('URL:'):
+            current['url'] = line.replace('URL:', '').strip()
+        elif line.startswith('Published:'):
+            current['date'] = line.replace('Published:', '').strip()
+    
+    # Don't forget last article
+    if current and 'title' in current:
+        articles.append(current)
+    
+    return articles
+
+def main():
+    # Get articles from blogwatcher
+    result = subprocess.run(
+        ['blogwatcher', 'articles', '--all'],
+        capture_output=True,
+        text=True
+    )
+    
+    if result.returncode != 0:
+        print(f"Error running blogwatcher: {result.stderr}")
+        return
+    
+    articles = parse_blogwatcher_output(result.stdout)
+    
+    # Filter and process
+    processed = []
+    seen_titles = set()
+    
+    for article in articles:
+        title = article.get('title', '')
+        url = article.get('url', '')
+        source = article.get('source', 'Unknown')
+        
+        # Skip junk
+        if is_junk(title, url):
+            continue
+        
+        # Skip duplicates
+        title_key = title.lower()[:50]
+        if title_key in seen_titles:
+            continue
+        seen_titles.add(title_key)
+        
+        # Fix URL
+        url = fix_url(url, source)
+        
+        # Create processed article
+        processed.append({
+            'emoji': get_emoji(title),
+            'title': title[:100],  # Truncate long titles
+            'summary': '',  # We don't have summaries from blogwatcher
+            'url': url,
+            'source': source,
+            'date': article.get('date', '')
+        })
+    
+    # Take most recent 100
+    processed = processed[:100]
+    
+    # Create feed JSON
+    feed = {
+        'lastUpdated': datetime.now().astimezone().isoformat(),
+        'items': processed
+    }
+    
+    # Write to file
+    output_path = Path(__file__).parent.parent / 'public' / 'news.json'
+    with open(output_path, 'w') as f:
+        json.dump(feed, f, indent=2)
+    
+    print(f"Exported {len(processed)} articles to {output_path}")
+
+if __name__ == '__main__':
+    main()

@@ -1,53 +1,805 @@
 {
-  "lastUpdated": "2026-02-05T13:30:00-07:00",
+  "lastUpdated": "2026-02-05T14:22:32.253992-07:00",
   "items": [
     {
-      "emoji": "💰",
-      "title": "UC Davis Receives $120M Gift",
-      "summary": "The largest donation ever to veterinary medicine! This transformative gift will fund new research facilities, endowed professorships, and student scholarships.",
+      "emoji": "\ud83d\udcb0",
+      "title": "UC Davis Receives $120M Gift, Largest Ever to Veterinary Medicine",
+      "summary": "",
       "url": "https://www.ucdavis.edu/news/uc-davis-receives-120m-gift-largest-ever-veterinary-medicine",
       "source": "UC Davis",
-      "date": "2026-02-05"
+      "date": ""
     },
     {
-      "emoji": "🎓",
-      "title": "Cornell Public Health Fellowship",
-      "summary": "Cornell announces a new full-tuition fellowship for students pursuing public health degrees, expanding access to One Health training.",
-      "url": "https://www.vet.cornell.edu/about-us/news/20260205/cornell-public-health-announces-new-full-tuition-fellowship",
-      "source": "Cornell",
-      "date": "2026-02-05"
-    },
-    {
-      "emoji": "🔬",
-      "title": "Texas A&M Zoonotic Research",
-      "summary": "Epidemiologist studies diseases that jump between animals and humans — critical work for pandemic preparedness.",
-      "url": "https://vetmed.tamu.edu/news/press-releases/leading-the-flock-zoonotic-disease-research/",
-      "source": "Texas A&M",
+      "emoji": "\ud83d\udcb0",
+      "title": "American Fundraising Professionals\u2019 Oregon Southwest Washington\u00a0chapter\u00a0recognizes\u00a0WesternU\u00a0supporte",
+      "summary": "",
+      "url": "https://www.westernu.edu/american-fundraising-professionals-oregon-southwest-washington-chapter-recognizes-westernu-supporter-and-philanthropist-jeff-heatherington/",
+      "source": "Western University",
       "date": "2026-02-04"
     },
     {
-      "emoji": "🏥",
-      "title": "Texas A&M McAllen Facility",
-      "summary": "New Rio Grande Valley campus brings veterinary education to an underserved region, training the next generation of food animal vets.",
+      "emoji": "\ud83c\udf93",
+      "title": "WesternU to welcome inaugural Master of Healthcare Administration class in Fall 2026",
+      "summary": "",
+      "url": "https://www.westernu.edu/westernu-to-welcome-inaugural-master-of-healthcare-administration-class-in-fall-2026/",
+      "source": "Western University",
+      "date": "2026-02-02"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Riverside University Health System to offer podiatric residency led by WesternU CPM faculty",
+      "summary": "",
+      "url": "https://www.westernu.edu/riverside-university-health-system-to-offer-podiatric-residency-led-by-westernu-cpm-faculty/",
+      "source": "Western University",
+      "date": "2026-01-23"
+    },
+    {
+      "emoji": "\ud83d\udd2c",
+      "title": "Collaboration drives innovation at the 11th\u00a0annual\u00a0WesternU\u00a0Oregon\u00a0Research\u00a0Symposium",
+      "summary": "",
+      "url": "https://www.westernu.edu/collaboration-drives-innovation-at-the-11th-annual-westernu-oregon-research-symposium/",
+      "source": "Western University",
+      "date": "2026-01-21"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "WesternU\u00a0Optometry-Nursing collaboration empowers nursing students through community health program",
+      "summary": "",
+      "url": "https://www.westernu.edu/westernu-optometry-nursing-collaboration-empowers-nursing-students-through-community-health-program/",
+      "source": "Western University",
+      "date": "2026-01-16"
+    },
+    {
+      "emoji": "\ud83e\udd1d",
+      "title": "WesternU\u00a0and Oregon State University\u00a0partnership\u00a0establishes\u00a0a DO and DPT Pathway Program",
+      "summary": "",
+      "url": "https://www.westernu.edu/westernu-and-oregon-state-university-partnership-establishes-a-do-and-dpt-pathway-program/",
+      "source": "Western University",
+      "date": "2026-01-15"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "WesternU College of Podiatric Medicine\u2019s \u2018Rising Voices\u2019 inspires students to advocate for their pro",
+      "summary": "",
+      "url": "https://www.westernu.edu/westernu-college-of-podiatric-medicines-rising-voices-inspires-students-to-advocate-for-their-profession/",
+      "source": "Western University",
+      "date": "2026-01-08"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "WesternU COMP continues to grow its annual student research symposium",
+      "summary": "",
+      "url": "https://www.westernu.edu/westernu-comp-continues-to-grow-its-annual-student-research-symposium/",
+      "source": "Western University",
+      "date": "2025-12-20"
+    },
+    {
+      "emoji": "\ud83d\udcc5",
+      "title": "WesternU\u2019s\u00a0One Health Symposium\u00a0highlights\u00a0connections\u00a0between\u00a0animal, human, and environmental heal",
+      "summary": "",
+      "url": "https://www.westernu.edu/westernus-one-health-symposium-highlights-connections-between-animal-human-and-environmental-health/",
+      "source": "Western University",
+      "date": "2025-12-15"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "WesternU CHS-Northwest and Lane Community College partnership strengthens PT and PTA student trainin",
+      "summary": "",
+      "url": "https://www.westernu.edu/westernu-chs-northwest-and-lane-community-college-partnership-strengthens-pt-and-pta-student-training/",
+      "source": "Western University",
+      "date": "2025-12-04"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "LMU Grows Its Footprint with Major Medical and Veterinary Expansion in Orange Park, Florida",
+      "summary": "",
+      "url": "https://www.lmunet.edu/news/2025/12/Major-Medical-and-Veterinary-Expansion-in-Orange-Park.php",
+      "source": "Lincoln Memorial University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Women\u2019s Lacrosse & Softball Earn Top Spots in NEC Pre-Season Polls",
+      "summary": "",
+      "url": "https://headlines.liu.edu/womens-lacrosse-softball-earn-top-spots-in-nec-pre-season-polls/",
+      "source": "Long Island University",
+      "date": "2026-01-31"
+    },
+    {
+      "emoji": "\ud83e\udd16",
+      "title": "Men\u2019s Ice Hockey Vaults to Projected Top Seed After 4th Straight Win",
+      "summary": "",
+      "url": "https://headlines.liu.edu/mens-ice-hockey-vaults-to-projected-top-seed-after-4th-straight-win/",
+      "source": "Long Island University",
+      "date": "2026-01-31"
+    },
+    {
+      "emoji": "\ud83c\udfc6",
+      "title": "Bernard King Honored on NY Knicks Night as the Sharks Shine",
+      "summary": "",
+      "url": "https://headlines.liu.edu/bernard-king-honored-on-ny-knicks-night-as-the-sharks-shine/",
+      "source": "Long Island University",
+      "date": "2026-01-31"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Kadidia Toure Named USBWA National Player of the Week",
+      "summary": "",
+      "url": "https://headlines.liu.edu/kadidia-toure-named-usbwa-national-player-of-the-week/",
+      "source": "Long Island University",
+      "date": "2026-01-31"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Sharks Football Kicks-Off 2026 Season with National Matchups",
+      "summary": "",
+      "url": "https://headlines.liu.edu/sharks-football-kicks-off-2026-season-with-national-matchups/",
+      "source": "Long Island University",
+      "date": "2026-01-31"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Roosevelt School Announces Presidential Speaker Series for America 250",
+      "summary": "",
+      "url": "https://headlines.liu.edu/roosevelt-school-announces-presidential-speaker-series-for-america-250/",
+      "source": "Long Island University",
+      "date": "2026-01-23"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Grammy-Nominated Producer Visits Roc Nation School",
+      "summary": "",
+      "url": "https://headlines.liu.edu/grammy-nominated-producer-visits-roc-nation-school/",
+      "source": "Long Island University",
+      "date": "2026-01-23"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Nine Students Selected to Present at National Conference",
+      "summary": "",
+      "url": "https://headlines.liu.edu/nine-students-selected-to-present-at-national-conference/",
+      "source": "Long Island University",
+      "date": "2026-01-23"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Spirit Squad Secures Fourth Consecutive National Championship",
+      "summary": "",
+      "url": "https://headlines.liu.edu/spirit-squad-secures-fourth-consecutive-national-championship/",
+      "source": "Long Island University",
+      "date": "2026-01-23"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Thousands of Rising Entrepreneurs Visit LIU for Competition",
+      "summary": "",
+      "url": "https://headlines.liu.edu/thousands-of-rising-entrepreneurs-visit-liu-for-competition/",
+      "source": "Long Island University",
+      "date": "2026-01-23"
+    },
+    {
+      "emoji": "\ud83d\udd2c",
+      "title": "WSU researchers say studying pig and grizzly bear skin may unlock new anti-aging, scar repair therap",
+      "summary": "",
+      "url": "https://vetmed.wsu.edu/wsu-researchers-say-studying-pig-and-grizzly-bear-skin-may-unlock-new-anti-aging-scar-repair-therapies/",
+      "source": "Washington State Vet Med",
+      "date": "2026-02-05"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "UPEI Action Plan and Reconciliation Update",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2026/01/upei-action-plan-and-reconciliation-update",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2026-01-05"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Message from the President: Season's Greetings!",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/12/message-president-seasons-greetings",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-12-16"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "UPEI officially opens the new Faculty of Medicine and Health Sciences Centre",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/11/upei-officially-opens-new-faculty-medicine-and-health-sciences-centre",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-11-28"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "113 UPEI student-athletes achieve U SPORTS Academic All-Canadian status",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/11/113-upei-student-athletes-achieve-u-sports-academic-all-canadian-status",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-11-20"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "President's Town Hall: Help us launch our new Strategic Plan!",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/11/presidents-town-hall-help-us-launch-our-new-strategic-plan",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-11-19"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Take Our Kids to Work Day at UPEI a success for 25 grade nine students",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/11/take-our-kids-work-day-upei-success-25-grade-nine-students",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-11-10"
+    },
+    {
+      "emoji": "\ud83d\udd2c",
+      "title": "UPEI Canada Research Chair in Socio-Psychological Epidemiology for Healthy Animals renewed",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/11/upei-canada-research-chair-socio-psychological-epidemiology-healthy",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-11-04"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "UPEI engineering students design lobster holding tank for local company",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/10/upei-engineering-students-design-lobster-holding-tank-local-company",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-10-28"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Federal government invests in resilience for Atlantic shellfish industry",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/10/federal-government-invests-resilience-atlantic-shellfish-industry",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-10-21"
+    },
+    {
+      "emoji": "\ud83d\udd2c",
+      "title": "UPEI publishes new research magazine",
+      "summary": "",
+      "url": "https://www.upei.ca/communications/news/2025/10/upei-publishes-new-research-magazine",
+      "source": "UPEI Atlantic Veterinary College",
+      "date": "2025-10-14"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Moon Mission",
+      "summary": "",
+      "url": "https://www.ttu.edu/now/posts/2026/01/nasa-awards-texas-tech-5-4m-to-fund-lister-s-third-moon-mission.php",
+      "source": "Texas Tech University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Rise in Rankings",
+      "summary": "",
+      "url": "https://www.ttu.edu/now/posts/2026/01/texas-tech-continues-rise-in-u-s-news-world-report-online-rankings.php",
+      "source": "Texas Tech University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Charging Forward",
+      "summary": "",
+      "url": "https://www.ttu.edu/now/posts/2026/01/texas-tech-researchers-explore-links-between-power-reliability-and-economy.php",
+      "source": "Texas Tech University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Clean Room",
+      "summary": "",
+      "url": "https://www.ttu.edu/now/posts/2026/01/texas-tech-to-build-24-million-clean-room-for-semiconductor-development.php",
+      "source": "Texas Tech University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "New Leader",
+      "summary": "",
+      "url": "https://www.ttu.edu/now/posts/2026/01/julie-grimes-looks-forward-to-next-chapter-with-texas-tech-public-media.php",
+      "source": "Texas Tech University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "New Horizons",
+      "summary": "",
+      "url": "https://www.ttu.edu/now/posts/2026/01/south-pole-telescope-detects-energetic-stellar-flares-near-center-of-galaxy.php",
+      "source": "Texas Tech University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Tufts Theriogenology Club and Student Livestock Organization Bovine Breeding Lab",
+      "summary": "",
+      "url": "https://vet.tufts.edu/news-events/news/tufts-theriogenology-club-and-student-livestock-organization-bovine-breeding-lab",
+      "source": "Tufts University",
+      "date": "2026-02-05"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "LSU Vet Med to host annual Open House",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2026/open_house.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udc04",
+      "title": "Winter weather tips for pet and livestock owners",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2026/winter_weather_tips.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "LSU Vet Med to release bald eagle on Thursday, January 1 in South Toledo Bend State Park",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/eagle_toledo_bend.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udd2c",
+      "title": "LSU Vet Med researchers investigating Equine herpesvirus",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/equine_herpesvirus_research.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "LSU School of Veterinary Medicine conferred two advanced degrees",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/graduation_fall2025.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Roy named director of LSU Diagnostics",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/lsudx_director.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Keep your pets healthy and safe during the holidays",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/holiday_hazards.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udc34",
+      "title": "LSU Vet Med treating three Texas horses quarantined for confirmed Equine Herpesvirus-1",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/equine_herpesvirus.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udfc6",
+      "title": "Winners announced for LSU Vet Med's 31st Annual International Exhibition on Animals in Art",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/art_awards.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "LSU Vet Med opens International Exhibition on Animals in Art on October 4 with reception",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/animals_in_art.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcb0",
+      "title": "LSU Vet Med honors endowed professors whose work impacts animal and human health every day",
+      "summary": "",
+      "url": "https://www.lsu.edu/vetmed/news/2025/professorships.php",
+      "source": "Louisiana State University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Student blog: Stepping through the gates of zoo medicine",
+      "summary": "",
+      "url": "https://www.vet.cornell.edu/about-us/news/20260205/student-blog-stepping-through-gates-zoo-medicine",
+      "source": "Cornell University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Cornell Public Health announces new, full-tuition fellowship",
+      "summary": "",
+      "url": "https://www.vet.cornell.edu/about-us/news/20260205/cornell-public-health-announces-new-full-tuition-fellowship",
+      "source": "Cornell University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "\u201cPaws Up\u201d \u2013 brought to you by the PVM Wellness Committee",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/paws-up-brought-to-you-by-the-pvm-wellness-committee-84.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udc15",
+      "title": "Boiler Up, Basketball and a Dog Named Walter Put Purdue Veterinary Medicine in TV Spotlight",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/boiler-up-basketball-and-a-dog-named-walter-put-purdue-veterinary-medicine-in-tv-spotlight.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udc34",
+      "title": "Annual PVM Equine Wellness Forum February 7 Features Enlightening Horse Health Presentations and Dem",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/annual-pvm-equine-wellness-forum-february-7-features-enlightening-horse-health-presentations-and-demonstrations.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83e\udd1d",
+      "title": "History in the Making: Purdue Veterinary Medicine Connects 21st Century Diagnostic Imaging with Preh",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/pvr25-history-in-the-making.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Carrying Forward a Life of Care: Family Honors Memory of Purdue Graduate Dr. Rick Chaille with Suppo",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/pvr25-carrying-forward-a-life-of-care-family-honors-memory-of-purdue-graduate-dr-rick-chaille-with-support-for-purdue-veterinary-hospitals-nutrition-kitchen.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "PVM Scholars Co-Edit New Edition of Signature Veterinary Histology Textbook",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/pvr25-pvm-scholars-co-edit-new-edition-of-signature-veterinary-histology-textbook.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83e\udd16",
+      "title": "All Hail to Our Victories and Heroes",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/pvr25-all-hail-to-our-victories-and-heroes.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udc89",
+      "title": "Electric Signals Help Immune Cells Find Their Way",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/pvr25-electric-signals-help-immune-cells-find-their-way.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Welcome New Faculty",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/pvr25-welcome-new-faculty.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83e\udd16",
+      "title": "An Alumna\u2019s Giant Leap of Faith",
+      "summary": "",
+      "url": "https://vet.purdue.edu/news/pvr25-an-alumnas-giant-leap-of-faith.php",
+      "source": "Purdue University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83e\udd81",
+      "title": "Leading The Flock: Texas A&M Epidemiologist Studies Zoonotic Diseases\u2019 Impact On Animals, People",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/press-releases/leading-the-flock-zoonotic-disease-research/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udd2c",
+      "title": "COWGIRL Honors VMBS Faculty Member, Researcher",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/press-releases/cowgirl-honors-vmbs-faculty-member-researcher/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udc15",
+      "title": "Learning Through Duke: How Texas A&M Helped One Family Understand And Manage Canine Diabetes",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/press-releases/learning-through-duke-canine-diabetes-texas-am/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udd2c",
+      "title": "VERO Researcher Recognized For Contributions To Food Animal Medicine",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/press-releases/vero-researcher-recognized-food-animal-medicine/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udfe5",
+      "title": "Facility Grand Opening Lauds New Horizons in Health Care, Veterinary Medicine Education for Rio Gran",
+      "summary": "",
       "url": "https://vetmed.tamu.edu/news/press-releases/mcallen-facility-expands-health-care-veterinary-medicine/",
       "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Protecting Animals, Plants, and Pipes From Winter Weather",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/homepage/winter-weather-tips-for-animals-plants-and-pipes/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Texas A&M VMBS To Shift Panhandle-Based Programming",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/press-releases/texas-am-vmbs-to-shift-panhandle-based-programming/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udd2c",
+      "title": "Texas A&M Research Team Identifies Species Of Brucellosis-Causing Bacteria In Cameroon",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/press-releases/brucellosis-in-cameroon/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Aggie Veterinary Student Pursues Career Goals With Help From Biomedical Sciences Master\u2019s Degree",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/press-releases/brianna-bazel/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83e\udd57",
+      "title": "Bridging Gaps In Veterinary Medicine: Texas A&M Gains New Food Animal Faculty Member",
+      "summary": "",
+      "url": "https://vetmed.tamu.edu/news/press-releases/jake-trautmann/",
+      "source": "Texas A&M",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "UW Sea Grant tracks PFAS and other contaminants in bald eagles",
+      "summary": "",
+      "url": "https://www.seagrant.wisc.edu/news/eagles/",
+      "source": "University of Wisconsin",
+      "date": "2026-02-05"
+    },
+    {
+      "emoji": "\ud83c\udfc6",
+      "title": "UW announces inaugural winners of Wisconsin Exchange grants",
+      "summary": "",
+      "url": "https://news.wisc.edu/wisconsin-exchange-announces-inaugural-round-of-grant-award-winners/",
+      "source": "University of Wisconsin",
+      "date": "2026-02-04"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Ancient rocks reveal evidence of the first continents and crust recycling processes on Earth",
+      "summary": "",
+      "url": "https://news.wisc.edu/ancient-rocks-reveal-evidence-of-the-first-continents-and-crust-recycling-processes-on-earth/",
+      "source": "University of Wisconsin",
+      "date": "2026-02-04"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Inside MadHacks: The Midwest\u2019s premier hackathon",
+      "summary": "",
+      "url": "https://cdis.wisc.edu/madhacks-2025/",
+      "source": "University of Wisconsin",
+      "date": "2026-02-04"
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Snowburst Bash welcomes students back",
+      "summary": "",
+      "url": "https://news.wisc.edu/snowburst-bash-welcomes-students-back/",
+      "source": "University of Wisconsin",
       "date": "2026-02-03"
     },
     {
-      "emoji": "🐕",
-      "title": "Penn Vet Working Dog Center",
-      "summary": "CBS Philadelphia features Penn's groundbreaking canine cancer detection research with working dogs.",
-      "url": "https://www.cbsnews.com/philadelphia/news/penn-vet-working-dog-center-dog-cancer/",
-      "source": "Penn Vet",
+      "emoji": "\ud83c\udf93",
+      "title": "Full circle: UW\u2013Madison alum works with grad students as local government professional",
+      "summary": "",
+      "url": "https://univercity.wisc.edu/2026/01/08/full-circle-uw-madison-alum-works-with-graduate-planning-students-as-local-government-professional/",
+      "source": "University of Wisconsin",
+      "date": "2026-02-03"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "UW\u2013Madison measles case",
+      "summary": "",
+      "url": "https://www.uhs.wisc.edu/measles/",
+      "source": "University of Wisconsin",
+      "date": "2026-02-02"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Dancing for (over) a century",
+      "summary": "",
+      "url": "https://education.wisc.edu/news/dancing-for-over-a-century/",
+      "source": "University of Wisconsin",
+      "date": "2026-02-02"
+    },
+    {
+      "emoji": "\ud83c\udfc6",
+      "title": "Events honor MLK\u2019s legacy",
+      "summary": "",
+      "url": "https://news.wisc.edu/union-events-honor-mlks-legacy/",
+      "source": "University of Wisconsin",
       "date": "2026-01-30"
     },
     {
-      "emoji": "🐄",
-      "title": "Tufts Bovine Breeding Lab",
-      "summary": "Theriogenology Club and Student Livestock Organization host hands-on bovine breeding training for vet students.",
-      "url": "https://vet.tufts.edu/news-events/news/tufts-theriogenology-club-and-student-livestock-organization-bovine-breeding-lab",
-      "source": "Tufts",
+      "emoji": "\ud83d\udd2c",
+      "title": "From the lab to the NICU: UW researchers pioneer contactless health monitoring",
+      "summary": "",
+      "url": "https://cdis.wisc.edu/uw-madison-researchers-pioneer-contactless-health-monitoring/",
+      "source": "University of Wisconsin",
+      "date": "2026-01-29"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Office space: Ray Wilhite",
+      "summary": "",
+      "url": "https://wire.auburn.edu/content/ocm/2026/02/031500-office-space-ray-wilhite.php",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Molecular messengers: Decoding a circulatory threat",
+      "summary": "",
+      "url": "https://www.vetmed.auburn.edu/blog/cvm-news/molecular-messengers-decoding-a-circulatory-threat/",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83e\udd81",
+      "title": "Spotlighting the CVM\u2019s unique exotics experiences",
+      "summary": "",
+      "url": "https://www.vetmed.auburn.edu/blog/cvm-news/spotlighting-the-cvms-unique-exotics-experiences/",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Internship program helps address shortage of veterinary technicians",
+      "summary": "",
+      "url": "https://wire.auburn.edu/content/ocm/2026/01/201622-vet-tech-program.php",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udfe5",
+      "title": "Department of Clinical Sciences earns Excellence in Education Award",
+      "summary": "",
+      "url": "https://wire.auburn.edu/content/announcements/2026/01/09120136-announcement.php",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Public and One Health student turns curiosity into impact",
+      "summary": "",
+      "url": "https://www.vetmed.auburn.edu/blog/cvm-news/public-and-one-health-student-turns-curiosity-into-impact/",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Global perspectives: Cottingham selected for NCURA fellowship",
+      "summary": "",
+      "url": "https://www.vetmed.auburn.edu/blog/cvm-news/global-perspectives-cottingham-selected-for-ncura-fellowship/",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83c\udf93",
+      "title": "Roots in horse capital inspire Auburn DVM student",
+      "summary": "",
+      "url": "https://www.vetmed.auburn.edu/blog/cvm-news/roots-in-horse-capital-inspire-auburn-dvm-student/",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udc15",
+      "title": "CVM to create professorship focusing on feline, canine nutrition",
+      "summary": "",
+      "url": "https://www.vetmed.auburn.edu/blog/cvm-news/cvm-to-create-professorship-focusing-on-feline-canine-nutrition/",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udea8",
+      "title": "Hope in action: Veterinary medicine professor launches emergency rescue team",
+      "summary": "",
+      "url": "https://wire.auburn.edu/content/philanthropy/2025/11/241000-avert.php",
+      "source": "Auburn University",
+      "date": ""
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "University Mourns Passing of Faculty Member",
+      "summary": "",
+      "url": "https://news.uoguelph.ca/2026/02/university-mourns-passing-of-faculty-member-7/?utm_source=rss&utm_medium=rss&utm_campaign=university-mourns-passing-of-faculty-member-7",
+      "source": "University of Guelph",
       "date": "2026-02-05"
+    },
+    {
+      "emoji": "\ud83d\udc34",
+      "title": "Diagnosing and Treating Equine Vitamin E Deficiency Diseases",
+      "summary": "",
+      "url": "https://thehorse.com/1142250/diagnosing-and-treating-equine-vitamin-e-deficiency-diseases/",
+      "source": "University of Pennsylvania",
+      "date": "2026-02-04"
+    },
+    {
+      "emoji": "\ud83e\udd16",
+      "title": "How to Help Your Pet Maintain a Healthy Weight",
+      "summary": "",
+      "url": "https://news.uoguelph.ca/2026/02/how-to-help-your-pet-maintain-a-healthy-weight/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-help-your-pet-maintain-a-healthy-weight",
+      "source": "University of Guelph",
+      "date": "2026-02-04"
+    },
+    {
+      "emoji": "\ud83e\udd57",
+      "title": "Food Economist Talks Grocery Rebate with Reuters, Global News",
+      "summary": "",
+      "url": "https://news.uoguelph.ca/2026/02/food-economist-talks-grocery-rebate-with-global-news/?utm_source=rss&utm_medium=rss&utm_campaign=food-economist-talks-grocery-rebate-with-global-news",
+      "source": "University of Guelph",
+      "date": "2026-02-04"
+    },
+    {
+      "emoji": "\ud83e\udd57",
+      "title": "Where food safety meets veterinary medicine",
+      "summary": "",
+      "url": "https://cvm.missouri.edu/where-food-safety-meets-veterinary-medicine/",
+      "source": "Missouri Vet Med",
+      "date": "2026-02-05"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "Waning Gibbous at Dawn",
+      "summary": "",
+      "url": "https://news.vt.edu/art/2026/february/doodle-feb-05-2026.html",
+      "source": "Virginia Tech",
+      "date": "2026-02-04"
+    },
+    {
+      "emoji": "\ud83d\udcf0",
+      "title": "View Story",
+      "summary": "",
+      "url": "https://news.okstate.edu/articles/veterinary-medicine/2025/singh_research.html",
+      "source": "Oklahoma State University",
+      "date": ""
     }
   ]
 }
