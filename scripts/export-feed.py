@@ -73,7 +73,9 @@ VET_HEALTH_KEYWORDS = [
     r'\bemergency', r'\bcritical care', r'\banesthes', r'\bradiology', r'\bimaging',
     r'\bnecropsy', r'\bautopsy', r'\bbiopsy', r'\bhistology',
     r'\bfellowship', r'\bscholarship',
-    r'\baccredit', r'\bavma\b', r'\baaha\b',
+    r'\baccredit', r'\bavma\b', r'\baaha\b', r'\bacvm\b', r'\bacvim\b',
+    r'\bhonorary', r'\bfaculty', r'\bdean\b', r'\bprofessor', r'\bchair\b',
+    r'\bappointment', r'\bnamed\b', r'\bselected\b', r'\belected\b',
 ]
 
 # Keywords that indicate OFF-TOPIC content (exclude if these match without vet context)
