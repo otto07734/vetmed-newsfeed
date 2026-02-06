@@ -15,6 +15,11 @@
   const CSS_URL = 'https://vetmed-newsfeed.vercel.app/widget.css';
 
   window.VetMedNewsFeed = {
+    allItems: [],
+    lastUpdated: null,
+    currentHeight: 500,
+    currentContainer: null,
+
     init: function(options) {
       options = options || {};
       const target = options.target || '#vetmed-newsfeed';
@@ -25,6 +30,9 @@
         console.error('VetMedNewsFeed: Target element not found:', target);
         return;
       }
+
+      this.currentContainer = container;
+      this.currentHeight = height;
 
       // Load CSS
       if (!document.querySelector('link[href*="widget.css"]')) {
@@ -37,7 +45,10 @@
       // Fetch and render
       this.fetchNews(function(data) {
         if (data && data.items) {
+          VetMedNewsFeed.allItems = data.items;
+          VetMedNewsFeed.lastUpdated = data.lastUpdated;
           container.innerHTML = VetMedNewsFeed.render(data.items, data.lastUpdated, height);
+          VetMedNewsFeed.initSearch(container);
           VetMedNewsFeed.initInfiniteScroll(container);
         } else {
           container.innerHTML = '<div class="vetmed-newsfeed"><div class="vetmed-newsfeed-header">Vet On It CE: Vet Med News and Research Feed</div><div style="padding: 20px; text-align: center; color: #6b7280;">Unable to load news feed</div></div>';
@@ -60,6 +71,12 @@
     render: function(items, lastUpdated, height) {
       let html = '<div class="vetmed-newsfeed">';
       html += '<div class="vetmed-newsfeed-header">Vet On It CE: Vet Med News and Research Feed</div>';
+      
+      // Search box
+      html += '<div class="vetmed-search-container">';
+      html += '<input type="text" class="vetmed-search-input" placeholder="🔍 Search news..." aria-label="Search news">';
+      html += '</div>';
+      
       html += '<div class="vetmed-newsfeed-items" style="max-height: ' + height + 'px;" data-item-count="' + items.length + '">';
 
       // Render all items
@@ -72,7 +89,7 @@
       const updateDate = lastUpdated ? new Date(lastUpdated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
       html += '<div class="vetmed-newsfeed-footer">';
       html += '<div class="vetmed-scroll-hint">↓ Scroll for more</div>';
-      html += '34 vet schools monitored · Updated ' + updateDate + '<br><a href="https://vetonitce.org" target="_blank">Powered by VetOnIt CE</a>';
+      html += '<span class="vetmed-result-count">' + items.length + ' articles</span> · 34 vet schools · Updated ' + updateDate + '<br><a href="https://vetonitce.org" target="_blank">Powered by VetOnIt CE</a>';
       html += '</div>';
       html += '</div>';
 
@@ -90,6 +107,69 @@
       html += '<div class="vetmed-news-meta">' + item.source + '</div>';
       html += '</div>';
       return html;
+    },
+
+    initSearch: function(container) {
+      const searchInput = container.querySelector('.vetmed-search-input');
+      if (!searchInput) return;
+
+      let debounceTimer;
+      searchInput.addEventListener('input', function(e) {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(function() {
+          VetMedNewsFeed.filterItems(e.target.value, container);
+        }, 200);
+      });
+
+      // Clear search on Escape
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          searchInput.value = '';
+          VetMedNewsFeed.filterItems('', container);
+        }
+      });
+    },
+
+    filterItems: function(query, container) {
+      const itemsContainer = container.querySelector('.vetmed-newsfeed-items');
+      const resultCount = container.querySelector('.vetmed-result-count');
+      const scrollHint = container.querySelector('.vetmed-scroll-hint');
+      
+      if (!itemsContainer) return;
+
+      const normalizedQuery = query.toLowerCase().trim();
+      
+      if (!normalizedQuery) {
+        // Reset to all items
+        itemsContainer.innerHTML = '';
+        this.allItems.forEach(function(item, index) {
+          itemsContainer.innerHTML += VetMedNewsFeed.renderItem(item, index);
+        });
+        itemsContainer.dataset.itemCount = this.allItems.length;
+        if (resultCount) resultCount.textContent = this.allItems.length + ' articles';
+        if (scrollHint) scrollHint.style.display = '';
+        return;
+      }
+
+      // Filter items
+      const filtered = this.allItems.filter(function(item) {
+        const searchText = (item.title + ' ' + item.summary + ' ' + item.source).toLowerCase();
+        return searchText.includes(normalizedQuery);
+      });
+
+      // Render filtered items
+      itemsContainer.innerHTML = '';
+      if (filtered.length === 0) {
+        itemsContainer.innerHTML = '<div class="vetmed-no-results">No articles found for "' + query + '"</div>';
+      } else {
+        filtered.forEach(function(item, index) {
+          itemsContainer.innerHTML += VetMedNewsFeed.renderItem(item, index);
+        });
+      }
+      
+      itemsContainer.dataset.itemCount = filtered.length;
+      if (resultCount) resultCount.textContent = filtered.length + ' articles';
+      if (scrollHint) scrollHint.style.display = filtered.length > 5 ? '' : 'none';
     },
 
     initInfiniteScroll: function(container) {
@@ -114,6 +194,10 @@
             scrollHint.textContent = '↓ Scroll for more';
           }
         }
+
+        // Only infinite scroll when not searching
+        const searchInput = container.querySelector('.vetmed-search-input');
+        if (searchInput && searchInput.value.trim()) return;
 
         // Check if near bottom (within 100px)
         if (scrollTop + clientHeight >= scrollHeight - 100 && loopCount < maxLoops) {
